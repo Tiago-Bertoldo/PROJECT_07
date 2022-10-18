@@ -1,0 +1,26 @@
+
+@media screen and (max-width:720px){
+    .container {
+        width: 100%;
+        &__nav {
+            padding: 0;
+            margin: 0%;
+            width: 100%;
+            img {
+                width: 30%;
+                height: 47px;
+            }
+        }ul {
+            padding: 0;
+        }
+        li{
+            padding-left: 1.1em;
+        }
+        &__link {
+            font-size: 8pt;
+        }
+        
+        
+       
+    }
+}
