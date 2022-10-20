@@ -1,4 +1,5 @@
-import '../Home/style.scss'
+import './Styles/mobile.scss'
+import './Styles/desktop.scss'
 import Card from '../../components/Card'
 import Backgrounds from '../../components/Backgrounds'
 import imgBack from './assets/img1.png'
@@ -11,7 +12,8 @@ export default function Home() {
 		      <section className='banner'>
 		      	<Backgrounds img = {imgBack}/>
 		      </section>
-          <section >
+
+          <section>
             <div className='articles'>
               {appartDispo.map((profile, index) => (
               <Card

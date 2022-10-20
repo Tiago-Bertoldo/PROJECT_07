@@ -1,17 +1,33 @@
 @media screen and (max-width:920px){
     .background{
         width: 100%;
-        border-radius: 10px;
-        width: calc(100% - 5%);
+        width: calc(100%);
         margin: 0 auto;
         &__img {
+            width: calc(100%);
+            margin: 0 auto !important;
+        }
+        
+    }
+}
+@media screen and (max-width:550px){
+    .background {
+        width: calc(100% - 4%);
+        border-radius: 10px;
+        &__img {
             border-radius: 10px;
-            margin:0 auto;
         }
         h2 {
-            font-size: 1rem;
+            width: 140px;
+            font-size: 15px;
             line-height: 100%;
+            margin-left: 1em;
         }
+    }
+}
+@media screen and (max-width:1024px){
+    .background {
+        width: calc(100% - 4%);
     }
 }
 //MOBILE 
@@ -37,3 +53,4 @@
     }
    
 }
+

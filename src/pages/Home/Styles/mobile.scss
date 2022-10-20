@@ -1,0 +1,38 @@
+@media screen and (max-width:780px){
+    .articles {
+        margin-top: 0 !important;
+        background: transparent !important;
+        &__box {
+            width: 100%;
+            padding: 0.5em !important;
+            max-width: none !important;
+        }
+        &__cover {
+            margin-top: 0 !important;
+            padding: 0 !important;
+        }
+        &__img{
+            object-fit: cover;
+            min-height: 180px;
+            max-width: 100% !important;
+        }    
+        &__title {
+            width: 35% !important;
+            margin-top: 20em !important;
+            height: 2em !important;
+        }
+    }
+}
+
+@media screen and (max-width:456px){
+    .articles {
+        &__box {
+            width: 100% !important;
+            max-width: none !important;
+        }
+        &__img{
+            max-width: 100% !important;
+        }    
+        
+    }
+}
