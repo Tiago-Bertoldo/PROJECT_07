@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Card({id, title , cover , pictures , equipments}){
     return (
-        <Link className="articles__box" to={id}> 
+        <Link className="articles__box" to={`/logement/${id}`}> 
         <div className="articles__cover">
             <img className="articles__img" src={cover} alt="" />
         </div>
@@ -12,5 +12,7 @@ export default function Card({id, title , cover , pictures , equipments}){
         </Link>     
     )
 }
+
+//CREATION DE TOUTS LE DEFAULT PROPS //
 
 

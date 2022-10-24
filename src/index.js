@@ -2,14 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Banner from './components/Banner'
 import Home from './pages/Home/index'
-import ErrorPage from './error-page';
 import Error from './components/Error'
 import Footer from './components/Footer/index';
+import Propos from './pages/Propos';
+import Logement from './pages/Logement';
 import {
   BrowserRouter as Router,
   Route,
   Routes
 } from "react-router-dom";
+
 
 
 
@@ -21,7 +23,8 @@ root.render(
          <Banner/>
             <Routes>
               <Route path='/' element={<Home/>}/>
-              <Route path='/teste' element={<ErrorPage/>}/>
+              <Route path='/logement/:idNumber' element={<Logement/>}/>
+              <Route path='/propos' element={<Propos/>}/>
               <Route path='*' element={<Error/>}>
             </Route>
           </Routes>

@@ -10,7 +10,7 @@ export default function Home() {
     return(
         <main>
 		      <section className='banner'>
-		      	<Backgrounds img = {imgBack}/>
+		      	<Backgrounds img = {imgBack} textH2 = {'Chez vous, partout et ailleurs'}/>
 		      </section>
 
           <section>

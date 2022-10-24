@@ -1,0 +1,44 @@
+@media screen and (max-width:600px) {
+    .propos-open {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        &__box {
+            margin-top: 1em;
+            width: 95%;
+            p {
+                font-size: 1rem;
+               }
+        }
+        .propos {
+            width: 100%;
+            padding: 0;
+            &__box {
+                margin: 0;
+            }
+        }
+      
+    }
+
+    .propos-close {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        &__box {
+            margin: 3em auto;
+            width: 95%;
+            p {
+                font-size: 1rem;
+               }
+        }
+        .propos {
+            width: 100%;
+            padding: 0;
+            &__box {
+                margin: 0;
+            }
+        }
+      
+    }
+
+}
