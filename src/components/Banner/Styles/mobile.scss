@@ -3,8 +3,11 @@
     .container {
         width: 100%;
         padding: 0;
-        margin: 0;
+        margin: 1em auto;
         height: 4rem;
+        .resposive-menu {
+            display: flex;
+        }
         &__nav {
             padding: 0;
             width: 100%;
@@ -20,6 +23,10 @@
         }
         &__link {
             font-size: 8pt;
+        }
+        .menu-nav {
+            display: none;
+            border: 1px solid black;
         }
         
         

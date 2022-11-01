@@ -5,6 +5,9 @@
     width: calc(100%);
     max-width: 1240px;
     margin: 0 auto;
+    .resposive-menu {
+        display: none;
+    }
     &__nav {
         display: flex;
         justify-content: space-between;
@@ -31,6 +34,9 @@
             display: flex;
             padding-left: 3em;
         }
+    }
+    .menu-nav {
+        
     }
     &__link {
         text-decoration: none;

@@ -3,20 +3,19 @@ import './Style/mobile.scss'
 import { BiChevronLeft } from 'react-icons/bi';
 import { BiChevronRight } from 'react-icons/bi';
 import { useState } from 'react';
+import PropTypes from 'prop-types'
 
-
-
-export default function Carrosell( {id , pictures}) {
+export default function Carrosell( {pictures}) {
     const [current , setCurrent] = useState(0)
     const getLength = pictures.length
-
-    const next = () => {
+   
+   
+    const handleNext = () => {
         setCurrent(current === getLength -1 ? 0 : current + 1);
     }
-    const prev = () => {
+    const handlePrev = () => {
         setCurrent(current === 0 ? getLength - 1 : current - 1 )
     }
-
     return (
         <div className="carrosell">
          {/* //SET CARROSSEL IMG */}
@@ -30,10 +29,10 @@ export default function Carrosell( {id , pictures}) {
 
             <div className='carrosell__fleches'>
                 <span>
-                    <button onClick={prev}><BiChevronLeft/></button>
+                    <button onClick={handlePrev}><BiChevronLeft/></button>
                 </span>
                 <span>
-                    <button onClick={next}><BiChevronRight/></button>
+                    <button onClick={handleNext}><BiChevronRight/></button>
                 </span>
             </div>
             <div className='carrosell__number'>
@@ -41,4 +40,8 @@ export default function Carrosell( {id , pictures}) {
             </div>
         </div>
     )
+}
+
+Carrosell.prototype = {
+    pictures: PropTypes.string
 }

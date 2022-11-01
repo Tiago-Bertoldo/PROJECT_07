@@ -2,14 +2,19 @@ import Backgrounds from "../../components/Backgrounds";
 import imgBack from './assets/img2.png';
 import imgBackMobile from './assets/img3-mobile.png'
 import Collapse from "../../components/Collapse";
+import './Style/responsive.scss'
+import './Style/desktop.scss'
 
 
 export default function Propos(){
     return (
         <div className="Container">
-            <header className="teste">
-                <Backgrounds img = {imgBack} img2 = {imgBackMobile} alt = {'background Propos'}/>
-            </header>
+            <section className="img-responsive">
+                <Backgrounds img = {imgBackMobile} alt = {'background Propos'}/>
+            </section>
+            <section className="img">
+                <Backgrounds img = {imgBack} alt = {'background Propos'}/>
+            </section>
             <section>
                 <Collapse title = {'Fiabilité'} text = {'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.'} />
                 <Collapse title = {'Respect'} text = {'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.'} />

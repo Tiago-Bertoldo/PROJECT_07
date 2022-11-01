@@ -3,9 +3,10 @@ import './Style/mobile.scss'
 import { BiChevronUp } from 'react-icons/bi';
 import { BiChevronDown } from 'react-icons/bi';
 import {useState} from 'react'
+import PropTypes from 'prop-types'
 
 
-export default function Fiabilite({text , title}) {
+export default function Collapse({text , title}) {
    const [isOpen , setIsOpen] = useState(false)
 
     return isOpen ? (
@@ -17,7 +18,7 @@ export default function Fiabilite({text , title}) {
           <div className='propos'>
             <div className='propos__box'> 
             <h3>{title}</h3>
-            <button onClick={()=> setIsOpen(false)}><BiChevronDown/></button>
+            <button onClick={()=> setIsOpen(false)}><BiChevronUp/></button>
             </div>
           </div>
         </div>
@@ -28,7 +29,7 @@ export default function Fiabilite({text , title}) {
         <div className='propos'>
           <div className='propos__box'> 
           <h3>{title}</h3>
-          <button onClick={()=> setIsOpen(true)}><BiChevronUp/></button>
+          <button onClick={()=> setIsOpen(true)}><BiChevronDown/></button>
       </div>
       </div>
 
@@ -37,4 +38,9 @@ export default function Fiabilite({text , title}) {
     </div>
     )
       
+}
+
+Collapse.prototype = {
+  text : PropTypes.number,
+  title: PropTypes.string,
 }

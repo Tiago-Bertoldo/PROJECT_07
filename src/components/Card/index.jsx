@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types'
 
-export default function Card({id, title , cover , pictures , equipments}){
+export default function Card({id, title , cover }){
     return (
         <Link className="articles__box" to={`/logement/${id}`}> 
         <div className="articles__cover">
@@ -16,3 +17,8 @@ export default function Card({id, title , cover , pictures , equipments}){
 //CREATION DE TOUTS LE DEFAULT PROPS //
 
 
+Card.prototype = {
+    id : PropTypes.number,
+    title: PropTypes.string,
+    cover: PropTypes.string
+}

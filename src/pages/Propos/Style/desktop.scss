@@ -1,0 +1,12 @@
+body {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.Container {
+    .img-responsive {
+        display: none;
+    }
+    .img {
+        display: block;
+    }
+}

@@ -2,4 +2,115 @@
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
+    display: flex;
+    &__collapse {
+        display: flex;
+        width: 100%;
+    }
+}
+.container-box {
+    width: 99%;
+    max-width: 1240px;
+    display: flex;
+    flex-direction: row;
+    &__right {
+        display: flex;
+        width: calc(100% - 7%);
+        padding: 0.1em;
+        flex-wrap: wrap;
+        h1 {
+            margin: 0.3em 0 0 0.5em ;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 33px;
+            display: flex;
+            align-items: flex-end;
+            color: #FF6060;
+        }p{
+            margin: 0.3em 0 1em 1em ;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 142.6%;
+            display: flex;
+            align-items: flex-end;
+            color: #FF6060;
+        }
+    }
+    &__left {
+        width: calc(100% - 10%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+    }&__hosting {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 60%;
+        .hosting-host {
+            width: 60%;
+            margin-top: 1em;
+            p {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 23px;
+                line-height: 142.6%;
+                display: flex;
+                color:#FF6060;
+                justify-content: flex-end;
+                align-items: center;
+           
+            }
+        }
+        .hosting-picture {
+            width: 35%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            img {
+                display: flex;
+                margin-top: 0.9em;
+                width: 65%;
+                border-radius: 50%;
+                margin-right: 0.6em;
+            }
+        }
+        
+    }&__rating {
+        width: 100%;
+        align-items: center;
+        margin: 1.4em 1.5em 0em 0em ;
+        width: 100%;
+        display: flex;
+       
+    }
+  
+}
+
+.container-collapse {
+    &__box {
+        width: 100% !important;
+        margin: -1em auto !important;
+        padding: 0 !important;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        div {
+            width: 95%;
+            list-style: none;
+            p{
+                margin-left: 1em;
+            }
+        }
+        .propos-open , .propos-close{
+           &__box {
+            width: 99% !important;
+           }
+        }
+    }
+    
 }
