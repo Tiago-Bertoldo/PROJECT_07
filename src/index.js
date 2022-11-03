@@ -31,4 +31,3 @@ root.render(
 );
 
 
-//OLD SYNTAXE

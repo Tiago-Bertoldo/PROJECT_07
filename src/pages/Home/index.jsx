@@ -3,7 +3,7 @@ import './Styles/desktop.scss'
 import Card from '../../components/Card'
 import Backgrounds from '../../components/Backgrounds'
 import imgBack from './assets/img1.png'
-import { appartDispo } from '../../date'
+import { AppartDispo } from '../../date'
 import '../../utils/styleGlobal/index.scss'
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
 
           <section>
             <div className='articles'>
-              {appartDispo.map((profile, index) => (
+              {AppartDispo.map((profile, index) => (
               <Card
                 key={`${profile.id}-${index}`}
                 title={profile.title}

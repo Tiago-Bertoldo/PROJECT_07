@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import Carrosell from "../../components/Carrosell"
 import HyperTags from '../../components/Tags'
-import { appartDispo } from "../../date"
+import { AppartDispo } from "../../date"
 import Collapse from "../../components/Collapse";
 import Error from "../../components/Error";
 import ReactStars from "react-rating-stars-component";
@@ -12,9 +12,10 @@ import './Style/desktop.scss'
 
 
 export default function Logement() {
+
     const {idNumber} = useParams()
     let hunterState = false;
-    appartDispo.forEach(element => {
+    AppartDispo.forEach(element => {
         if(element.id === idNumber) {
             hunterState = true
         }
@@ -24,7 +25,7 @@ export default function Logement() {
         <div className="container-logement">
             {hunterState ? (
                 <div className="container-carrosell">
-                    {appartDispo.map((values , index )=> (
+                    {AppartDispo.map((values , index )=> (
                      values.id === idNumber ? (
                         <div key={index}>
                             <Carrosell pictures= {values.pictures}id={values.id} key={index}/>
@@ -33,7 +34,7 @@ export default function Logement() {
                 ))}
             <div className="container-box">
                     <div className="container-box__right">
-                        {appartDispo.map((values, index) => (
+                        {AppartDispo.map((values) => (
                             values.id === idNumber ? (
                             <div key={values.id}>
                                 <h1>{values.title}</h1>
@@ -44,21 +45,20 @@ export default function Logement() {
                         ))}
             </div>
             <div className="container-box__left">
-                        {appartDispo.map((values, index) => (
+                        {AppartDispo.map((values) => (
                             values.id === idNumber ? (
                             <div className="container-box__hosting" key={values.id}>
                             <div className="hosting-host">
                                 <p>{values.host.name}</p>
                             </div>
-                            
                             <div className="hosting-picture">
                                 <img src={values.host.picture} alt="Host pictures wallpaper" />
                             </div>
-                        </div>        
+                        </div>
                                 ) : null
                             ))}
                 <div>
-                        {appartDispo.map((values, index) => (
+                        {AppartDispo.map((values) => (
                             values.id === idNumber ? (
                             <div className='container-box__rating' key={values.id}>
                                     <ReactStars
@@ -72,17 +72,11 @@ export default function Logement() {
                             ) : null
                         ))}
                 </div>
-                </div>          
+                </div>
             </div>
-                
-                
-                
-                
-                
-                
             <div className="container-collapse">
                     <div >
-                     {appartDispo.map((values, index) => (
+                     {AppartDispo.map((values) => (
                             values.id === idNumber ? (
                             <div className="container-collapse__box" key={values.id}>
                                 <div>
@@ -96,16 +90,14 @@ export default function Logement() {
                                                     )}
                                                 </span>} />
                             </div>
-                        </div>        
+                        </div>
                                 ) : null
-                            ))}  
+                            ))}
                     </div>
                 </div>
         </div>
             ):(<Error/>)}
-       
         </div>
-    
         )
     }
 

@@ -36,3 +36,14 @@
         
     }
 }
+
+
+@media screen and (max-width:320px){
+    .articles {
+        &__title {
+            width: 40% !important;
+            margin-top: 19em !important;
+        }
+        
+    }
+}
