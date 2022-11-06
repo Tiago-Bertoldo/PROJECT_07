@@ -18,8 +18,6 @@ export default function Logement() {
     AppartDispo.forEach(element => {
         if(element.id === idNumber) {return isLogement = true }
     });
-    console.log(isLogement)
-
     return(
         <div className="container-logement">
             {isLogement ? (

@@ -1,6 +1,11 @@
 @media screen and (max-width:769px){
     .container-box {
         flex-direction: column !important;
+        &__right {
+            h1 {
+                font-size: 24px !important;
+            }
+        }
         &__left {
             width: 100% !important;
             flex-direction: row-reverse !important;
