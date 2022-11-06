@@ -28,10 +28,8 @@ export default function Banner(){
                         <Link className="container__link" to='/propos/'> A Propos</Link>
                     </li>
                 </ul>
-               
                 </div>
             </div>
         </div>
-        
     )
 }

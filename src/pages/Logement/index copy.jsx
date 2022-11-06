@@ -5,20 +5,25 @@ import { AppartDispo } from "../../date"
 import Collapse from "../../components/Collapse";
 import Error from "../../components/Error";
 import ReactStars from "react-rating-stars-component";
+import { useState } from "react";
 
 
 import './Style/mobile.scss'
 import './Style/desktop.scss'
 
+
 export default function Logement() {
 
     const {idNumber} = useParams()
-    /** ForEach pour valider le id avec IdNumber */
-    let isLogement = false
+    const [isLogement , setIsLogement] = useState(false)
+    /** ForEach pour cheque le element avec IdNumber */
+    // let isLogement = false
     AppartDispo.forEach(element => {
-        if(element.id === idNumber) {return isLogement = true }
+        if(element.id === idNumber) {
+           return setIsLogement(true)
+        //    isLogement = true
+        }
     });
-    console.log(isLogement)
 
     return(
         <div className="container-logement">

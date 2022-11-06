@@ -10,7 +10,6 @@ export default function Backgrounds(props) {
            <img className="background__img" src={props.img} alt={props.alt} />
            <h2>{props.textH2}</h2>
         </div>
-        
         </div>
 
     )

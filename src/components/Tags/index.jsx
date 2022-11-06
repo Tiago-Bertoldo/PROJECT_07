@@ -7,7 +7,6 @@ export default function Tags({tags}){
            {tags.map((tagsSelect , index) =>(
                 <div  className="container-tags__btn" key={index}>
                     <span>{tagsSelect}</span>
-                    
                 </div>
            ))}
         </div>

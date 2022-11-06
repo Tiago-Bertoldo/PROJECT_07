@@ -56,6 +56,10 @@ export default function Carrosell( {pictures}) {
     )
 }
 
+
+/**
+ * CREATION DE TOUTS LE DEFAULT PROPS
+ */
 Carrosell.prototype = {
     pictures: PropTypes.string
 }

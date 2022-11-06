@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import './Style/index.scss'
 import './Style/resposive.scss'
 export default function Error() {
-    return( 
+    return(
         <section className="section">
             <h1>
                 404
