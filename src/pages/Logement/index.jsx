@@ -13,11 +13,10 @@ import './Style/desktop.scss'
 export default function Logement() {
 
     const {idNumber} = useParams()
-    /** ForEach pour valider le id avec IdNumber */
-    let isLogement = false
-    AppartDispo.forEach(element => {
-        if(element.id === idNumber) {return isLogement = true }
-    });
+    /** find pour valider le id avec IdNumber */
+    let isLogement = AppartDispo.find((appartementID) => appartementID.id === idNumber)
+
+    
     return(
         <div className="container-logement">
             {isLogement ? (
