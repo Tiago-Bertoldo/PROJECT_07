@@ -1,9 +1,8 @@
-import './Style/desktop.scss'
-import './Style/mobile.scss'
-import { BiChevronLeft } from 'react-icons/bi';
-import { BiChevronRight } from 'react-icons/bi';
+import PropTypes from 'prop-types';
 import { useState } from 'react';
-import PropTypes from 'prop-types'
+import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
+import './Style/desktop.scss';
+import './Style/mobile.scss';
 
 export default function Carrosell( {pictures}) {
     const [current , setCurrent] = useState(0)
@@ -27,9 +26,6 @@ export default function Carrosell( {pictures}) {
             }
             </div>
             ))}
-            <div className='carrosell__number'>
-                {`${current +1}/${getLength}`}
-            </div>
         </div>
     ) : (
         <div className="carrosell">

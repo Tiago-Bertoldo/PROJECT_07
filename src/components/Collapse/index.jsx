@@ -1,9 +1,8 @@
-import './Style/desktop.scss'
-import './Style/mobile.scss'
-import { BiChevronUp } from 'react-icons/bi';
-import { BiChevronDown } from 'react-icons/bi';
-import {useState} from 'react'
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
+import './Style/desktop.scss';
+import './Style/mobile.scss';
 
 
 export default function Collapse({text , title}) {

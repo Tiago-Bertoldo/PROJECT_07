@@ -1,54 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 
 .container {
+  display: flex;
+  width: calc(100%);
+  max-width: 1240px;
+  margin: 0 auto;
+  .resposive-menu {
+    display: none;
+  }
+  &__nav {
     display: flex;
-    width: calc(100%);
-    max-width: 1240px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
     margin: 0 auto;
-    .resposive-menu {
-        display: none;
+    max-width: 1240px;
+    img {
+      margin: 2em 0 2em 0.7em;
+      width: 210.32px;
+      height: 68px;
     }
-    &__nav {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        align-items: center;
-        margin: 0 auto;
-        max-width: 1240px;
-        img {
-            margin: 2em 0 2em 0.7em;
-            width: 210.32px;
-            height: 68px;
-        }
+  }
+  &__menu {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    ul {
+      display: flex;
+      align-items: center;
+      margin-right: 1.5em;
     }
-    &__menu {
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
-        ul {
-            display: flex;
-            align-items: center;
-            margin-right: 1.5em;
-        }
-        li {
-            display: flex;
-            padding-left: 3em;
-        }
+    li {
+      display: flex;
+      padding-left: 3em;
     }
-    .menu-nav {
-        
+  }
+  .menu-nav {
+  }
+  &__link {
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #ff6060;
+    position: relative;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-bottom: 1px solid #ff6060;
     }
-    &__link {
-        text-decoration: none;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1rem;
-        color: #FF6060;
-        position: relative;
-        border-bottom: 1px solid transparent;
-        &:hover {
-            border-bottom: 1px solid  #FF6060;;
-        }
-    }
+  }
 }

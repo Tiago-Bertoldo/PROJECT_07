@@ -1,9 +1,9 @@
 import Backgrounds from "../../components/Backgrounds";
-import imgBack from './assets/img2.png';
-import imgBackMobile from './assets/img3-mobile.png'
 import Collapse from "../../components/Collapse";
-import './Style/responsive.scss'
-import './Style/desktop.scss'
+import imgBack from './assets/img2.png';
+import imgBackMobile from './assets/img3-mobile.png';
+import './Style/desktop.scss';
+import './Style/responsive.scss';
 
 export default function Propos(){
     /**

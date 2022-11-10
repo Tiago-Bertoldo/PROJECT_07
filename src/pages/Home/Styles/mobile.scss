@@ -1,4 +1,11 @@
-@media screen and (max-width:780px){
+@media screen and (max-width:870px){
+    .articles {
+        p{
+            font-size: 11px;
+        }
+    }
+}
+@media screen and (max-width:793px){
     .articles {
         margin-top: 0 !important;
         background: transparent !important;
@@ -20,7 +27,9 @@
             width: 35% !important;
             margin-top: 20em !important;
             height: 2em !important;
+          
         }
+        
     }
 }
 

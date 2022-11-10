@@ -1,6 +1,6 @@
 import React from "react";
-import './Styles/index.scss'
-import './Styles/resposive.scss'
+import './Styles/index.scss';
+import './Styles/resposive.scss';
 
 export default function Backgrounds(props) {
 

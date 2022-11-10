@@ -1,10 +1,9 @@
-import logo from "./assets/LOGO.svg";
-import './Styles/desktop.scss'
-import './Styles/mobile.scss'
 import { Link } from "react-router-dom";
+import logo from "./assets/LOGO.svg";
+import './Styles/desktop.scss';
+import './Styles/mobile.scss';
 
 export default function Banner(){
-
     return(
         <div className="container">
             <div className="container__nav">

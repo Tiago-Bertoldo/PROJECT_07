@@ -1,6 +1,6 @@
+import PropTypes from 'prop-types'
 import './Style/desktop.scss'
 import './Style/mobile.scss'
-import PropTypes from 'prop-types'
 export default function Tags({tags}){
     return (
         <div className="container-tags">

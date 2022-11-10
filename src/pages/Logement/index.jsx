@@ -1,22 +1,16 @@
-import { useParams } from "react-router-dom"
-import Carrosell from "../../components/Carrosell"
-import HyperTags from '../../components/Tags'
-import { AppartDispo } from "../../date"
+import ReactStars from "react-rating-stars-component";
+import { useParams } from "react-router-dom";
+import Carrosell from "../../components/Carrosell";
 import Collapse from "../../components/Collapse";
 import Error from "../../components/Error";
-import ReactStars from "react-rating-stars-component";
-
-
-import './Style/mobile.scss'
-import './Style/desktop.scss'
-
+import HyperTags from '../../components/Tags';
+import { AppartDispo } from "../../date";
+import './Style/desktop.scss';
+import './Style/mobile.scss';
 export default function Logement() {
-
-    const {idNumber} = useParams()
-    /** find pour valider le id avec IdNumber */
+    const {idNumber} = useParams();
+         /** find pour valider le id avec IdNumber */
     let isLogement = AppartDispo.find((appartementID) => appartementID.id === idNumber)
-
-    
     return(
         <div className="container-logement">
             {isLogement ? (
@@ -28,31 +22,31 @@ export default function Logement() {
                         </div>
                     ) : null
                 ))}
-            <div className="container-box">
-                    <div className="container-box__right">
-                        {AppartDispo.map((values) => (
-                            values.id === idNumber ? (
-                            <div key={values.id}>
-                                <h1>{values.title}</h1>
-                                <p>{values.location}</p>
-                                <HyperTags  tags= {values.tags}  key={values.id}/>
-                            </div>
-                            ) : null
-                        ))}
-            </div>
-            <div className="container-box__left">
-                        {AppartDispo.map((values) => (
-                            values.id === idNumber ? (
-                            <div className="container-box__hosting" key={values.id}>
-                            <div className="hosting-host">
-                                <p>{values.host.name}</p>
-                            </div>
-                            <div className="hosting-picture">
-                                <img src={values.host.picture} alt="Host pictures wallpaper" />
-                            </div>
-                        </div>
+                <div className="container-box">
+                        <div className="container-box__right">
+                            {AppartDispo.map((values) => (
+                                values.id === idNumber ? (
+                                <div key={values.id}>
+                                    <h1>{values.title}</h1>
+                                    <p>{values.location}</p>
+                                    <HyperTags  tags= {values.tags}  key={values.id}/>
+                                </div>
                                 ) : null
                             ))}
+                </div>
+                <div className="container-box__left">
+                            {AppartDispo.map((values) => (
+                                values.id === idNumber ? (
+                                <div className="container-box__hosting" key={values.id}>
+                                <div className="hosting-host">
+                                    <p>{values.host.name}</p>
+                                </div>
+                                <div className="hosting-picture">
+                                    <img src={values.host.picture} alt="Host pictures wallpaper" />
+                                </div>
+                            </div>
+                                    ) : null
+                                ))}
                 <div>
                         {AppartDispo.map((values) => (
                             values.id === idNumber ? (
@@ -67,7 +61,7 @@ export default function Logement() {
                             </div>
                             ) : null
                         ))}
-                </div>
+                    </div>
                 </div>
             </div>
             <div className="container-collapse">
@@ -79,12 +73,14 @@ export default function Logement() {
                                     <Collapse title = {'Description'} text = {values.description}/>
                                 </div>
                            <div>
-                            <Collapse title = {'Équipements'} text = {
-                                                <span className="container-logement__list">
+                            <Collapse title = {'Équipements'} 
+                                        text = {
+                                        <span className="container-logement__list">
                                                     {values.equipments.map((number , index) =>
                                                         <li key={index} >{number}</li>
                                                     )}
-                                                </span>} />
+                                        </span>} 
+                                        />
                             </div>
                         </div>
                                 ) : null
@@ -92,7 +88,8 @@ export default function Logement() {
                     </div>
                 </div>
         </div>
-            ):(<Error/>)}
+            ): (<Error/>)
+            }
         </div>
         )
     }

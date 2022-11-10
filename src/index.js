@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Banner from './components/Banner'
-import Home from './pages/Home/index'
-import Error from './components/Error'
-import Footer from './components/Footer/index';
-import Propos from './pages/Propos';
-import Logement from './pages/Logement';
 import {
   BrowserRouter as Router,
   Route,
   Routes
 } from "react-router-dom";
+import Banner from './components/Banner';
+import Error from './components/Error';
+import Footer from './components/Footer/index';
+import Home from './pages/Home/index';
+import Logement from './pages/Logement';
+import Propos from './pages/Propos';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

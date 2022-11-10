@@ -1,0 +1,12 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+    "files.defaultLanguage": "markdown",
+    "terminal.integrated.fontFamily": "monospace",
+     "editor.fontFamily": "Consolas, 'Courier New', monospace",
+
+}
