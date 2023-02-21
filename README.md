@@ -1,3 +1,5 @@
+<strong>PROJET KANAP</strong>
+
 <strong>Contexte</strong><br>
 Le client, Kanap, est une marque de canapés. 
 Il souhaite avoir une plateforme de e-commerce en plus de sa boutique physique pour vendre ses produits sur Internet.
