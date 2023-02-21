@@ -1,5 +1,4 @@
-<strong>Contexte</strong>
-
+<strong>Contexte</strong><br>
 Le client, Kanap, est une marque de canapés. 
 Il souhaite avoir une plateforme de e-commerce en plus de sa boutique physique pour vendre ses produits sur Internet.
 
@@ -16,9 +15,7 @@ Gérer la modification et la suppression de produits dans la page Panier
 Passer la commande
 Afficher le numéro de commande
 Mettre en place le plan de test d’acceptation
-
 <strong>Technologies utilisées</strong><br>
-
 HTML
 CSS
 JavaScript
@@ -31,5 +28,8 @@ Consommer une API
 Manipuler le DOM en JavaScript
 Utiliser URLSearchParams
 Manipuler le local storage en JavaScript
+
+
+Site exemple : (https://www.thbertoldo.tech/canape/)
 
 
